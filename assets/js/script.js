@@ -1,5 +1,5 @@
 var item = document.getElementById("item");
-var btn = document.getElementById("enter");
+var btn = document.getElementById("addProductBtn");
 var ul = document.querySelector("ul");
 
 function getLength(){
