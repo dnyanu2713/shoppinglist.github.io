@@ -8,9 +8,19 @@ function getLength(){
 
 function createEle(){
 	var tr = document.createElement("tr");
-	var td = document.createElement("td");
-	td.appendChild(document.createTextNode(item.value));
-	tr.appendChild(td)
+	
+	var td1 = document.createElement("td");
+	td1.appendChild(document.createTextNode(item.value));
+	tr.appendChild(td1)
+	
+	var td2 = document.createElement("td");
+	td2.appendChild(document.createTextNode("Remove"));
+	tr.appendChild(td2)
+	
+	td2.onclick = function () {
+	    this.parentElement.remove(this);
+	};
+	
 	tbody.appendChild(tr); 
 	item.value = "";
 }
