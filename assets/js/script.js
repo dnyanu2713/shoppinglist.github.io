@@ -1,16 +1,18 @@
 var item = document.getElementById("item");
 var btn = document.getElementById("addProductBtn");
-var ul = document.querySelector("ul");
+var tbody = document.querySelector("tbody");
 
 function getLength(){
 	return item.value.length;
 }
 
 function createEle(){
-	var li = document.createElement("li");
-		li.appendChild(document.createTextNode(item.value));
-		ul.appendChild(li); 
-		item.value = "";
+	var tr = document.createElement("tr");
+	var td = document.createElement("td");
+	td.appendChild(document.createTextNode(item.value));
+	tr.appendChild(td)
+	tbody.appendChild(tr); 
+	item.value = "";
 }
 
 function addItemByMouseClick(){
