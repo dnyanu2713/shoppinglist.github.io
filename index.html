@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Shopping List Using DOM</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-   </head>
+	<head>
+		<title>Shopping List Using DOM</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
 <body>
-
 	<h1>Shpping List</h1>
 	<p>Add products to shopping list</p>
-	<input class="item" type="text" id="item" name="item" placeholder="Item enter..">
-	<button id="addProductBtn">Enter</button>
-	<ul class="productList">
-	</ul>
-<script type="text/javascript" src="assets/js/script.js"></script>
+	<div style="display:flex;" class="item">
+		<input type="text" id="item" name="item" placeholder="Item enter..">
+		<button id="addProductBtn" style="">Enter</button>
+	</div>
+	<table>
+		<thead>
+			<tr>
+		        <th rowspan="2">Product Name</th>
+		    </tr>
+		</thead>
+		<tbody id="productList">
+	    
+		</tbody>
+	</table>
+	<script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
